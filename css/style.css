@@ -10,7 +10,7 @@ header {
 
 #title {
   font-size: 6em;
-  font-family:  "Edu Tas Beginner", sans-serif;
+  font-family: "Sometype Mono", "monospace";
 }
 
 body {
@@ -19,11 +19,12 @@ body {
 
 .card {
   position: relative;
+  font-family:  "Edu Tas Beginner", sans-serif;
 }
 
 .pin {
   position: absolute;
-  top: -12px;
+  top: 5px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,-50%);
 }
