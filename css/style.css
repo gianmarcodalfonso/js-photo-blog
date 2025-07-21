@@ -4,7 +4,26 @@
   box-sizing: border-box;
 }
 
+header {
+  background-image: url(../img/wall.png);
+}
+
 #title {
   font-size: 6em;
   font-family:  "Edu Tas Beginner", sans-serif;
+}
+
+body {
+  background-image: url(../img/cork.png);
+}
+
+.card {
+  position: relative;
+}
+
+.pin {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
 }
