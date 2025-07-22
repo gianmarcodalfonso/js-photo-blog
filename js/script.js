@@ -6,9 +6,7 @@ const cardMaker = (container) => {
 
   axios.get(cardDataApi).then((resp) => {
     resp.data.forEach(element => {
-      let title = element.title;
-      let date = element.date;
-      let url = element.url;
+      let { title, date, url } = element;
 
       container.innerHTML += `
         <div class="col-12 col-md-6 col-lg-4">
