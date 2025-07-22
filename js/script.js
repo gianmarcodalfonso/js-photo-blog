@@ -1,5 +1,8 @@
 const cardContainer = document.getElementById('card-container');
 const cardDataApi = "https://lanciweb.github.io/demo/api/pictures/"
+const overlay = document.getElementById('overlay');
+const overlayImg = overlay.querySelector('img');
+const closeBtn = overlay.querySelector('button');
 
 const cardMaker = (container) => {
   container.innerHTML = ``;
@@ -21,20 +24,20 @@ const cardMaker = (container) => {
           </div>
         </div>`;
     });
+    const cardImgs = document.querySelectorAll(`.card-img-top`)
+    
+    cardImgs.forEach(img => {
+      img.addEventListener('click', e => {
+        e.preventDefault();
+        overlayImg.src = img.src;
+        overlay.classList.remove('d-none');
+      });
+    });
+    
   });
 };
 
 cardMaker(cardContainer);
-
-
-const overlay = document.getElementById('overlay');
-const overlayImg = overlay.querySelector('img');
-const closeBtn = overlay.querySelector('button');
-
-cardContainer.addEventListener('click', e => {
-  e.preventDefault();
-  overlay.classList.remove('d-none');
-});
 
 closeBtn.addEventListener(`click`, e => {
   e.preventDefault();
