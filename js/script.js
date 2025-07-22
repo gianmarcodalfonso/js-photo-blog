@@ -35,3 +35,8 @@ cardContainer.addEventListener('click', e => {
   e.preventDefault();
   overlay.classList.remove('d-none');
 });
+
+closeBtn.addEventListener(`click`, e => {
+  e.preventDefault();
+  overlay.classList.add(`d-none`)
+})
