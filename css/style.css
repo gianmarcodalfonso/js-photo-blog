@@ -37,3 +37,8 @@ body {
   position: fixed;
   top: 0;
 }
+
+#overlay img {
+  height: 65vh;
+  object-fit: fill;
+}

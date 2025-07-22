@@ -25,3 +25,13 @@ const cardMaker = (container) => {
 };
 
 cardMaker(cardContainer);
+
+
+const overlay = document.getElementById('overlay');
+const overlayImg = overlay.querySelector('img');
+const closeBtn = overlay.querySelector('button');
+
+cardContainer.addEventListener('click', e => {
+  e.preventDefault();
+  overlay.classList.remove('d-none');
+});
