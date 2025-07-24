@@ -20,6 +20,7 @@ body {
 .card {
   position: relative;
   font-family:  "Edu Tas Beginner", sans-serif;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.5);
 }
 
 .pin {
@@ -48,4 +49,5 @@ body {
   transition: 1s;
   z-index: 1;
   cursor: pointer;
+  box-shadow: 0 .250rem .5rem rgba(0, 0, 0, 0.5);
 }
