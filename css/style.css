@@ -42,3 +42,10 @@ body {
   height: 65vh;
   object-fit: fill;
 }
+
+.card:hover {
+  transform: rotate(15deg);
+  transition: 1s;
+  z-index: 1;
+  cursor: pointer;
+}
